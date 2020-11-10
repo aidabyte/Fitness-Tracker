@@ -12,7 +12,7 @@ app.use(express.static("public"));
 
 
 mongoose.connect(
-    process.env.MONGODB_URI || 'mongodb://localhost/fathomless-savannah-49970',
+    process.env.MONGODB_URI || 'mongodb://localhost/tracker',
     {
       useNewUrlParser: true,
       useUnifiedTopology: true,
