@@ -53,7 +53,7 @@ const workoutSchema = new Schema(
     },
     {
     toJSON: {
-
+        // virtual properties existing logically
         virtuals: true
       }
     
