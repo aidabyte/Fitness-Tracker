@@ -13,6 +13,7 @@ app.use(express.static("public"));
 
 
 mongoose.connect(
+  //  /workout is my datatbase name
     process.env.MONGODB_URI || 'mongodb://localhost/workout',
     {
       useNewUrlParser: true,
