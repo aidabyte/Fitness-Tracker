@@ -1,5 +1,6 @@
 const express = require("express");
 const mongoose = require("mongoose");
+const morgan = require("morgan");
 
 const PORT = process.env.PORT || 3000
 
@@ -12,7 +13,7 @@ app.use(express.static("public"));
 
 
 mongoose.connect(
-    process.env.MONGODB_URI || 'mongodb://localhost/tracker',
+    process.env.MONGODB_URI || 'mongodb://localhost/workout',
     {
       useNewUrlParser: true,
       useUnifiedTopology: true,
@@ -20,3 +21,11 @@ mongoose.connect(
       useFindAndModify: false
     }
   );
+
+    // require("./routes/htmlRoutes")(app);
+    // require("./routes/apiRoutes")(app);
+
+
+  app.listen(PORT, function(){
+    console.log(`App listening on Port ${PORT}!`);
+});
