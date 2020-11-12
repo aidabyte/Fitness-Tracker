@@ -8,6 +8,17 @@ const workoutSchema = new Schema(
             type: Date,
             default:() => new Date()
         },
+
+        exercises: [
+            {
+                type: {
+                    type: String,
+                    trim: true,
+                    required: "Enter an exercise type"
+                },
+                
+            }
+        ]
         
     }
 )
