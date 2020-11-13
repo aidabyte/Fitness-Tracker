@@ -26,7 +26,9 @@ module.exports = function(app) {
 
       app.put("/api/workouts/:id", (req,res) => {
           console.log(req.params.id)
-        //   identify object that im updating.Want to update object from front end. push into exercises array. push req.body. new exercise object thats being passed from front end
+        //   identify object that im updating.
+        // Want to update object from the front end
+        // Then push into exercises array.( push req.body.) new exercise object thats being passed from front end
           db.Workout.findOneAndUpdate({_id: req.params.id}, {$push: {exercises:req.body}})
           .then(dbWorkout => {
               res.json(dbWorkout);
