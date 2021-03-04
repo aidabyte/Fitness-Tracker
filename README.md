@@ -1,6 +1,6 @@
 
 # Fitness Tracker Hw
-> An application that creates and tracks daily workouts by logging the multiple exercises that are put in for that day into a database. In addition, you can view the page of the last seven workouts and their summary.
+> An application that creates and tracks daily workouts by logging the multiple exercises that are put in for that day into a database. First thing that the user chooses is an exercise type, followed by two lists of parameters. The parameters are stored in the mongo database. In addition, the user can view the page of the last seven workouts and their summary.
 
 ## Table of contents
 * [General info](#general-info)
